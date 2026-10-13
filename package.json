@@ -1,0 +1,42 @@
+{
+	"name": "pewpew",
+	"version": "10.0",
+	"author": "shoobman",
+	"scripts": {
+		"pump": "bun ./src/app.ts",
+		"setup_linux": "bash ./setup/setup.sh && chmod +x ./setup/build/setup.exe && chmod +x ./setup/build/ && ./setup/build/setup || ./setup/build/setup.exe || setup/build/setup.exe",
+		"setup_windows": "./setup/setup.bat && ./setup/build/setup.exe || setup/build/setup.exe",
+		"start": "npm run stop && pm2 start pm2.json && npm run log",
+		"stop": "pm2 delete pm2.json",
+		"stats": "clear && bun ./src/analytics/analytics.ts",
+		"r": "git pull && npm run stop || pm2 start pm2.json && npm run log",
+		"log": "clear && pm2 log bot --lines 2000 --raw",
+		"commit": "git add . && git commit -m \"changes\" && git push",
+		"test": "bun ./src/tests/test.ts",
+		"testBuy": "bun ./src/tests/testBuy.ts",
+		"testMint": "bun ./src/tests/testMint.ts",
+		"testWeek": "bun ./src/tests/testWeek.ts",
+		"trader": "bun ./tools/trader/trader.ts",
+		"scalper": "bun ./tools/scalper/scalper.ts"
+	},
+	"dependencies": {
+		"@bagsfm/bags-sdk": "^1.3.5",
+		"@meteora-ag/dynamic-bonding-curve-sdk": "^1.5.7",
+		"@pump-fun/pump-sdk": "^1.36.0",
+		"@pump-fun/pump-swap-sdk": "^1.19.0",
+		"@raydium-io/raydium-sdk-v2": "^0.2.33-alpha",
+		"@solana/spl-token": "^0.4.14",
+		"@solana/web3.js": "1.98.2",
+		"bn.js": "^5.2.3",
+		"bs58": "^6.0.0",
+		"luxon": "^3.7.2",
+		"open": "^11.0.0",
+		"resend": "^6.20.0"
+	},
+	"devDependencies": {
+		"@types/bn.js": "^5.2.0",
+		"@types/luxon": "^3.7.1",
+		"prettier": "^3.8.3",
+		"typescript": "^5.9.3"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"ignoreDeprecations": "6.0",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": false,
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	},
+	"files": ["types.d.ts"],
+	"include": ["**/*.ts", "**/*.d.ts", "*.d.ts"],
+	"exclude": ["**/unused/*.ts"]
+}

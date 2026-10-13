@@ -1,0 +1,11 @@
+logs/
+logs_saved/
+node_modules/
+.env
+2026*
+ws/target/
+migrated.txt
+blacklists/
+setup.ts
+setup.sh
+setup.exe

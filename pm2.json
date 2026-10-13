@@ -1,0 +1,13 @@
+{
+	"apps": [
+		{
+			"name": "bot",
+			"script": "bun ./src/app.ts",
+			"watch": false,
+			"merge_logs": true,
+			"log_date_format": "",
+			"out_file": "./logs/file.txt",
+			"error_file": "./logs/error.txt"
+		}
+	]
+}
