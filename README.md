@@ -1,7 +1,7 @@
 # PumpFun sniper bot 2026
 
-![My Image](ss1.png)
-![My Image](ss2.png)
+<img src="ss1.png" alt="My screenshot" width="500">
+<img src="ss2.png" alt="My screenshot" width="500">
 
 This is the project for the PewPew pumpfun sniper bot, with up to date code for pumpfun in 2026. The bot is able to snipe according to your own strategy and can run several strategies at once.
 
@@ -9,7 +9,7 @@ The bot currently supports PumpFun, BonkFun and Bags.fm
 
 This doc assumes you have node and npm installed.
 
-## HOW TO INSTALL:
+# HOW TO INSTALL:
 
 1. Run "npm install" to install all neccesary dependencies.
 2. On Windows: Run "npm run setup_windows".
@@ -22,6 +22,8 @@ An example strategy can be found in ./config/strategies.ts
 A more in depth doc is coming soon, but you can always go through the code and figure things out for yourself.
 
 DISCLAIMER: Use this at your own discretion. Start with small amounts to test out the bot. Only increase the amount once you've found a good strategy.
+
+---
 
 # MANUAL PROJECT INSTALLATION
 
