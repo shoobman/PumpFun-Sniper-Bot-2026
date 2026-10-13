@@ -7,5 +7,5 @@ ws/target/
 migrated.txt
 blacklists/
 setup.ts
-setup.sh
+./setup.sh
 setup.exe
