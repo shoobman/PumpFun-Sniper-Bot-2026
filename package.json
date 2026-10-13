@@ -4,7 +4,7 @@
 	"author": "shoobman",
 	"scripts": {
 		"pump": "bun ./src/app.ts",
-		"setup_linux": "bash ./setup/setup.sh && chmod +x ./setup/build/setup.exe && chmod +x ./setup/build/ && ./setup/build/setup || ./setup/build/setup.exe || setup/build/setup.exe",
+		"setup_linux": "bash ./setup/setup.sh && ./setup/build/setup || ./setup/build/setup.exe || setup/build/setup.exe",
 		"setup_windows": "./setup/setup.bat && ./setup/build/setup.exe || setup/build/setup.exe",
 		"start": "npm run stop && pm2 start pm2.json && npm run log",
 		"stop": "pm2 delete pm2.json",
