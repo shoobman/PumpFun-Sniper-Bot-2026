@@ -1,5 +1,8 @@
 # PumpFun sniper bot 2026
 
+![My Image](ss1.png)
+![My Image](ss2.png)
+
 This is the project for the PewPew pumpfun sniper bot, with up to date code for pumpfun in 2026. The bot is able to snipe according to your own strategy and can run several strategies at once.
 
 The bot currently supports PumpFun, BonkFun and Bags.fm
